@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Our City</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- Use google font -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Lustria" rel="stylesheet" type="text/css" />
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="#/styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body class="background-clouds" ng-app="voteVisualizerAngularApp" >
+    <div id="nav-wrapper" class="background-white color-black">
+      <nav id="mainMenu" class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar background-lead"></span>
+              <span class="icon-bar background-lead"></span>
+              <span class="icon-bar background-lead"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Our City Voting Record Analyzer</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/links">Links</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </div>
+
+      <div ng-view></div>
+      
+    <footer class="background-midnight-blue color-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Next Steps!</h3>
+            <p>Are we done? Heck no! There is so much more data to be crunched. Stay tuned for updates!</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Follow Us!</h3>
+            <ul>
+              <li><a href="https://twitter.com/rhoyem"><span class="fa fa-twitter">  Rosie</li>
+              <li><a href="https://twitter.com/hackthegap"><span class="fa fa-twitter"></li>
+              <li><a href="https://twitter.com/hackthegap"><span class="fa fa-twitter"></li>
+              <li><a href="https://twitter.com/hackthegap"><span class="fa fa-twitter"></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>A Big Fat Thanks!</h3>
+            <p>Thanks so much to all of the Geekette organizers who make Hack the Gap possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                Our City MN. Created with <span class="fa fa-heart"> during <a href="hhttp://www.hackthegap.mn/">Hack the Gap MN</a>
+              </div>
+              <div class="col-md-6">
+                <p class="social">
+                  <a href="https://twitter.com/hackthegap"><span class="fa fa-twitter"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+
+    <!-- Include slider -->
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/responsive-slider.js"></script>
+    <script src="js/responsive-calendar.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="libs/Bootstrap-Image-Gallery-3.1.1/js/bootstrap-image-gallery.min.js"></script>
+    <script src="js/reduce-menu.js"></script>
+    <script src="js/match-height.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.responsive-calendar').responsiveCalendar({
+        time: '2013-05',
+        events: {
+          "2013-05-30": {"number": 5, "badgeClass": "background-turquoise", "url": "http://w3widgets.com/responsive-slider"},
+          "2013-05-26": {"number": 1, "badgeClass": "background-turquoise", "url": "http://w3widgets.com"}, 
+          "2013-05-03": {"number": 1, "badgeClass": "background-pomegranate"}, 
+          "2013-05-12": {}}
+      });
+
+      $('#mixit').mixitup();
+    });
+
+    $(window).load(function(){
+      if ($(window).width() > 767) {
+        matchHeight($('.info-thumbnail .caption .description'), 3);
+      }
+
+      $(window).on('resize', function(){
+        if ($(window).width() > 767) {
+          $('.info-thumbnail .caption .description').height('auto');
+          matchHeight($('.info-thumbnail .caption .description'), 3);
+        }
+      });
+    });
+    </script>
+  
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/links.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
